@@ -17,7 +17,7 @@ request.onload = function () {
         document.querySelector("#väder-nu").src = "moln.jpg";
         console.log("Cloudy")
     } else if (data.timeSeries[0].parameters[18].values <= 14  && data.timeSeries[0].parameters[18].values >= 7 || data.timeSeries[0].parameters[18].values <= 24  && data.timeSeries[0].parameters[18].values >= 18) {
-        document.querySelector("#väder-nu").src = "regn.jpg";
+        document.querySelector("#väder-nu").src = "rainy.jpg";
         console.log("Rain")
     } else if (data.timeSeries[0].parameters[18].values <= 17  && data.timeSeries[0].parameters[18].values >= 15 || data.timeSeries[0].parameters[18].values <= 27  && data.timeSeries[0].parameters[18].values >= 25) {
         document.querySelector("#väder-nu").src = "snow.jpg";
@@ -25,8 +25,9 @@ request.onload = function () {
  
     }
     
+}
 
-
+// Simple Math... Color Buttons...Fruit...
 
 /* 
     1-3 clear
@@ -66,7 +67,7 @@ request.onload = function () {
  */
 
 
-}
+
 //56.03315	12.946284
 //https://opendata.smhi.se/apidocs/metfcst/index.html
 //GET /api/category/{category}/version/{version}/geotype/point/lon/{longitude}/lat/{latitude}/data.json

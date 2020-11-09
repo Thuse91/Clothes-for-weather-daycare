@@ -16,16 +16,20 @@
             <ul class="bilder">
             <li><a href="#" id="Sol"><img src="sol.jpg" alt="Sol bild"></a></li>
             <li><a href="#" id="Moln"><img src="moln.jpg" alt="Moln bild"></a></li>
-            <li><a href="#" id="Regn"><img  src="regn.png" alt="Regn bild"></a></li>
+            <li><a href="#" id="Regn"><img  src="rainy.jpg" alt="Regn bild"></a></li>
      <!--        <li><a href="#" id="Vind"><img  src="wind.jpg" alt="Vind bild"></a></li> -->
             <li><a href="#" id="Snö"><img src="snow.jpg" alt="Snö bild"></a></li>
         </ul>
         <ul class="desc">
-            <li>Solsken</li>
-            <li>Molnigt</li>
-            <li>Regn</li>
+            <li id="desc-sol"><a onclick="responsiveVoice.speak('Solsken', 'Swedish Female');" 
+                type="button" value="Solsken">Solsken</a></li>
+            <li id="desc-moln"><a onclick="responsiveVoice.speak('Molnigt', 'Swedish Female');" 
+                type="button" value="Molnigt">Molnigt</a></li>
+            <li id="desc-regn"><a onclick="responsiveVoice.speak('Regn', 'Swedish Female');" 
+                type="button" value="Regn">Regn</a></li>
  <!--            <li>Blåsigt</li> -->
-            <li>Snöfall</li>
+            <li id="desc-snö"><a onclick="responsiveVoice.speak('Snöfall', 'Swedish Female');" 
+                type="button" value="Snöfall">Snöfall</a></li>
         </ul>
         </div>
         <div class="content-right">
@@ -38,10 +42,14 @@
                         <li><img  src="shoes.png" alt="skor"></li>
                     </div>
                     <ul class="sol-plagg">
-                        <li>Keps</li>
-                        <li>T-shirt</li>
-                        <li>Kort-byxor</li>
-                        <li>Skor</li>
+                        <li class="plagg-keps"><a onclick="responsiveVoice.speak('Keps', 'Swedish Female');" 
+                            type="button" value="Keps">Keps</a></li>
+                        <li class="plagg-tshirt"><a onclick="responsiveVoice.speak('T shirt', 'Swedish Female');" 
+                            type="button" value="T-shirt">T-shirt</a></li>
+                        <li class="plagg-kortbyxor"><a onclick="responsiveVoice.speak('Kortbyxor', 'Swedish Female');" 
+                            type="button" value="Kort-byxor">Kort-byxor</a></li>
+                        <li class="plagg-skor"><a onclick="responsiveVoice.speak('Skor', 'Swedish Female');" 
+                            type="button" value="Skor">Skor</a></li>
                     </ul>
                     <div class="Molnigtkläder">
                         <li><img  src="hatt.jpg" alt="Keps"></li>
@@ -50,10 +58,14 @@
                         <li><img  src="shoes.png" alt="skor"></li>
                     </div>
                     <ul class="moln-plagg">
-                        <li>Keps</li>
-                        <li>Tröja</li>
-                        <li>Långbyxor</li>
-                        <li>Skor</li>
+                        <li class="plagg-keps"><a onclick="responsiveVoice.speak('Keps', 'Swedish Female');" 
+                            type="button" value="Keps">Keps</a></li>
+                        <li class="plagg-tröja"><a onclick="responsiveVoice.speak('Tröja', 'Swedish Female');" 
+                            type="button" value="Tröja">Tröja</a></li>
+                        <li class="plagg-långbyxor"><a onclick="responsiveVoice.speak('Långbyxor', 'Swedish Female');" 
+                            type="button" value="Långbyxor">Långbyxor</a></li>
+                        <li class="plagg-skor"><a onclick="responsiveVoice.speak('Skor', 'Swedish Female');" 
+                            type="button" value="Skor">Skor</a></li>
                     </ul>
                     <div class="Regnkläder">
                         <li><img  src="blaklader-2009-southwest-rain-hat-w1280h1024q90i9978.jpg" alt="Regnhatt"></li>
@@ -62,10 +74,14 @@
                         <li><img  src="rubberboots.png" alt="gummistövlar"></li>
                     </div>
                     <ul class="regn-plagg">
-                        <li>Regnhatt</li>
-                        <li>Regnjacka</li>
-                        <li>Långbyxor</li>
-                        <li>Regn stövlar</li>
+                        <li class="plagg-regnhatt"><a onclick="responsiveVoice.speak('Regnhatt', 'Swedish Female');" 
+                            type="button" value="Regnhatt">Regnhatt</a></li>
+                        <li class="plagg-regnjacka"><a onclick="responsiveVoice.speak('Regnjacka', 'Swedish Female');" 
+                            type="button" value="Regnjacka">Regnjacka</a></li>
+                        <li class="plagg-långbyxor"><a onclick="responsiveVoice.speak('Långbyxor', 'Swedish Female');" 
+                            type="button" value="Långbyxor">Långbyxor</a></li>
+                        <li class="plagg-regnstövlar"><a onclick="responsiveVoice.speak('Regn stövlar', 'Swedish Female');" 
+                            type="button" value="Regn stövlar">Regn stövlar</a></li>
                     </ul>
 <!--                     <div class="Blåsigt">
                         <li><img  src="warmhat.jpg" alt="mössa"></li>
@@ -87,11 +103,16 @@
                         <li><img  src="winter-boots.jpg" alt="VinterStövlar"></li>
                     </div>
                     <ul class="snö-plagg">
-                        <li>Mössa</li>
-                        <li>Vinter jacka</li>
-                        <li>Handskar</li>
-                        <li>Byxor</li>
-                        <li>Vinter stövlar</li>
+                        <li class="plagg-mössa"><a onclick="responsiveVoice.speak('Mössa', 'Swedish Female');" 
+                            type="button" value="Mössa">Mössa</a></li>
+                        <li class="plagg-vinterjacka"><a onclick="responsiveVoice.speak('Vinter jacka', 'Swedish Female');" 
+                            type="button" value="Vinter jacka">Vinter jacka</a></li>
+                        <li class="plagg-handskar"><a onclick="responsiveVoice.speak('Handskar', 'Swedish Female');" 
+                            type="button" value="Handskar">Handskar</a></li>
+                        <li class="plagg-långbyxor"><a onclick="responsiveVoice.speak('Långbyxor', 'Swedish Female');" 
+                            type="button" value="Långbyxor">Långbyxor</a></li>
+                        <li class="plagg-vinterstövlar"><a onclick="responsiveVoice.speak('Vinter stövlar', 'Swedish Female');" 
+                            type="button" value="Vinter stövlar">Vinter stövlar</a></li>
                     </ul>
                 </div>
             </div>
