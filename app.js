@@ -77,7 +77,6 @@ request.onload = function () {
 document.getElementById("Sol").addEventListener("click", sol);
 document.getElementById("Moln").addEventListener("click", moln);
 document.getElementById("Regn").addEventListener("click", regn);
-/* document.getElementById("Vind").addEventListener("click", vind); */
 document.getElementById("Snö").addEventListener("click", snö);
 
 
@@ -87,8 +86,6 @@ var Molncontent = document.querySelector(".Molnigtkläder");
 var Molndesc = document.querySelector(".moln-plagg");
 var RegnContent = document.querySelector(".Regnkläder");
 var Regndesc = document.querySelector(".regn-plagg");
-/* var Vindcontent = document.querySelector(".Blåsigt");
-var Vinddesc = document.querySelector(".blås-plagg"); */
 var Snöcontent = document.querySelector(".Snöfall");
 var Snödesc = document.querySelector(".snö-plagg");
 
@@ -103,8 +100,6 @@ function sol() {
     Molndesc.style.display = "none";
     RegnContent.style.display = "none";
     Regndesc.style.display = "none";
-/*     Vindcontent.style.display = "none";
-    Vinddesc.style.display = "none"; */
     Snöcontent.style.display = "none";
     Snödesc.style.display = "none";
 }
@@ -117,8 +112,6 @@ function moln() {
     Molndesc.style.display = "block";
     RegnContent.style.display = "none";
     Regndesc.style.display = "none";
-/*     Vindcontent.style.display = "none";
-    Vinddesc.style.display = "none"; */
     Snöcontent.style.display = "none";
     Snödesc.style.display = "none";
 }
@@ -130,24 +123,10 @@ function regn() {
     Molndesc.style.display = "none";
     RegnContent.style.display = "block";
     Regndesc.style.display = "block";
-/*     Vindcontent.style.display = "none";
-    Vinddesc.style.display = "none"; */
     Snöcontent.style.display = "none";
     Snödesc.style.display = "none";
 }
 
-/* function vind() {
-    Solcontent.style.display = "none";
-    Soldesc.style.display = "none";
-    Molncontent.style.display = "none";
-    Molndesc.style.display = "none";
-    RegnContent.style.display = "none";
-    Regndesc.style.display = "none";
-    Vindcontent.style.display = "block";
-    Vinddesc.style.display = "block";
-    Snöcontent.style.display = "none";
-    Snödesc.style.display = "none";
-} */
 
 function snö() {
     Solcontent.style.display = "none";
@@ -156,8 +135,6 @@ function snö() {
     Molndesc.style.display = "none";
     RegnContent.style.display = "none";
     Regndesc.style.display = "none";
-/*     Vindcontent.style.display = "none";
-    Vinddesc.style.display = "none"; */
     Snöcontent.style.display = "block";
     Snödesc.style.display = "block";
 }
