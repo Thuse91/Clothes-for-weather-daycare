@@ -28,25 +28,184 @@
        </div>
 
        <div class="content">
-     <div class="djurosaker">
+     <div class="djurosaker" onclick="djurosaker();">
         <a onclick="responsiveVoice.speak('Djur och Saker', 'Swedish Female');" 
         type="button" value="#">
-         <h2>Djur och Saker</h2>
+         <h2>Djur och Saker <i class="fas fa-volume-up"></i></h2></a>
      </div>  
-     <div class="färgoformer">
+     <div class="färgoformer" onclick="färgoform();">
         <a onclick="responsiveVoice.speak('Färger och Former', 'Swedish Female');" 
         type="button" value="#">
-        <h2>Färger och Former</h2>
+        <h2>Färger och Former <i class="fas fa-volume-up"></i></h2></a>
      </div>  
-     <div class="plusominus">
+     <div class="plusominus" onclick="plusominus();">
         <a onclick="responsiveVoice.speak('Plus och Minus', 'Swedish Female');" 
-        type="button" value="#">
-        <h2>Plus och Minus</h2>
+        type="button" value="Plus och Minus">
+        <h2>Plus och Minus <i class="fas fa-volume-up"></i></h2></a>
      </div>
     </div>
     <div class="djur-content">
-
+        <div class="back"><i class="fas fa-arrow-alt-circle-left" style="font-size: 70px";></i></div>
+        <div class="djur-page1"> 
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Hund', 'Swedish Female');" 
+                    type="button" value="Hund">Hund <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/hund.jpg" alt="Hund">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Katt', 'Swedish Female');" 
+                    type="button" value="Katt">Katt <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/katt.jpg" alt="Katt">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Häst', 'Swedish Female');" 
+                    type="button" value="Häst">Häst <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/häst.jpg" alt="häst">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Elefant', 'Swedish Female');" 
+                    type="button" value="Elefant">Elefant <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/elefant.png" alt="elefant">            
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('tiger', 'Swedish Female');" 
+                    type="button" value="tiger">Tiger <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/tiger.jpg" alt="tiger">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Zebra', 'Swedish Female');" 
+                    type="button" value="Zebra">Zebra <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/zebra.jpg" alt="Zebra">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Björn', 'Swedish Female');" 
+                    type="button" value="Björn">Björn <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/björn.jpg" alt="Björn"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Varg', 'Swedish Female');" 
+                    type="button" value="Varg">Varg <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/varg.jpg" alt="Varg">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Igelkott', 'Swedish Female');" 
+                    type="button" value="Igelkott">Igelkott <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/igelkotte.jpg" alt="Igelkott">
+            </div>
+        </div>
+      </div>
+      <div class="djur-page2">
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('äpple', 'Swedish Female');" 
+                    type="button" value="äpple">Äpple <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/äpple.jpg" alt="äpple">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Apelsin', 'Swedish Female');" 
+                    type="button" value="Apelsin">Apelsin <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/apelsin.jpg" alt="Apelsin">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Päron', 'Swedish Female');" 
+                    type="button" value="Päron">Päron <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/päron.jpg" alt="Päron">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('ananas', 'Swedish Female');" 
+                    type="button" value="ananas">Ananas <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/anannas.jpg" alt="ananas">            
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('banan', 'Swedish Female');" 
+                    type="button" value="banan">Banan <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/banan.jpg" alt="banan">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('kokosnöt', 'Swedish Female');" 
+                    type="button" value="kokosnöt">Kokosnöt <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/kokosnöt.jpg" alt="kokosnöt">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('vindruvor', 'Swedish Female');" 
+                    type="button" value="vindruvor">Vindruvor <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/vindruvor.jpg" alt="vindruvor"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('vattenmelon', 'Swedish Female');" 
+                    type="button" value="vattenmelon">Vattenmelon <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/vattenmelon.jpg" alt="vattenmelon">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Jordgubbe', 'Swedish Female');" 
+                    type="button" value="Jordgubbe">Jordgubbe <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/jordgubbe.png" alt="Jordgubbe">
+            </div>
+        </div>
     </div> 
+      <div class="djur-page3">
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Bil', 'Swedish Female');" 
+                    type="button" value="Bil">Bil <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/bil.png" alt="Bil">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Båt', 'Swedish Female');" 
+                    type="button" value="Båt">Båt <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/båt.jpg" alt="Båt">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Cykel', 'Swedish Female');" 
+                    type="button" value="Cykel">Cykel <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/cykel.jpg" alt="Cykel">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Hus', 'Swedish Female');" 
+                    type="button" value="Hus">Hus <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/hus.jpg" alt="Hus">            
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Dörr', 'Swedish Female');" 
+                    type="button" value="Dörr">Dörr <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/dörr.jpg" alt="Dörr">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Dator', 'Swedish Female');" 
+                    type="button" value="Dator">Dator <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/dator.jpg" alt="Dator">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Fotboll', 'Swedish Female');" 
+                    type="button" value="Fotboll">Fotboll <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/fotboll.png" alt="Fotboll"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Träd', 'Swedish Female');" 
+                    type="button" value="Träd">Träd <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/träd.jpg" alt="Träd">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Snögubbe', 'Swedish Female');" 
+                    type="button" value="Snögubbe">Snögubbe <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/snögubbe.png" alt="Snögubbe">
+            </div>
+        </div>
+    </div> 
+    <div class="fram"><i class="fas fa-arrow-alt-circle-right"  style="font-size: 70px";></i></div>
     <div class="färg-content">
         
     </div>

@@ -27,6 +27,51 @@ request.onload = function () {
     
 }
 
+page1 = document.querySelector(".djur-page1");
+page2 = document.querySelector(".djur-page2");
+page3 = document.querySelector(".djur-page3");
+fram = document.querySelector(".fram");
+back = document.querySelector(".back");
+djurcontent = document.querySelector(".djur-content");
+färgcontent = document.querySelector(".färg-content");
+pluscontent = document.querySelector(".plus-content");
+
+
+/* if (page1.style.display === "none" && page2.style.display === "none" && page3.style.display === "none") */
+
+
+function färgoform() {
+    console.log("placeholder")
+    djurcontent.style.display = "none";
+    pluscontent.style.display = "none";
+    färgcontent.style.display = "flex";
+    fram.style.display = "none";
+    page1.style.display = "none";
+    back.style.display = "none";
+}
+
+function plusominus() {
+    console.log("placeholder")
+    djurcontent.style.display = "none";
+    färgcontent.style.display = "none";
+    pluscontent.style.display = "flex";
+    fram.style.display = "none";
+    page1.style.display = "none";
+    back.style.display = "none";
+
+}
+
+function djurosaker() {
+    färgcontent.style.display = "none";
+    pluscontent.style.display = "none";
+    djurcontent.style.display = "flex";
+    fram.style.display = "block";
+    page1.style.display = "block";
+    back.style.display = "block";
+}
+
+
+
 // Simple Math... Color Buttons...Fruit...
 // https://www.wallpapermania.eu/download/2012-08/3309/Raining-in-my-neighborhood_1920x1200.jpg
 /* 

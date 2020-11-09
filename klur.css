@@ -5,6 +5,7 @@ body {
     padding: 0;
     width: 100%;
     font-size: 160%;
+    background-image: url('/images/back-question.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -142,4 +143,89 @@ h2 {
 .plusominus {
     border: 1px solid rgb(121, 83, 1);
     background-color: rgb(39, 233, 0);
+}
+
+
+
+.djur-content {
+    margin-top: 25px;
+    display:flex;
+    margin-bottom: 40px;
+}
+
+
+.back {
+    flex:1;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.fram {
+    flex:1;
+    margin: auto;
+    text-align: center;
+}
+
+.djur-page1, 
+.djur-page2, 
+.djur-page3 {
+    flex:16;
+}
+
+
+.djur-row {
+    display:flex;
+    text-align: center;
+    width: 100%;
+}
+
+.djur-row img {
+    height: 300px;
+    width: 300px;
+}
+
+.row-box {
+    flex:1;
+    border: 2px solid rgb(46, 46, 46);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-bottom: 35px;
+    margin: 20px;
+    box-shadow: 0px 10px 10px black;
+    background-color: white;
+    
+}
+
+h3 {
+    padding: 8px 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 20px 15%;
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.75);
+    border: 1px solid rgb(121, 83, 1);
+    background-color: rgb(252, 202, 94);
+    cursor: pointer;
+}
+
+
+.djur-page1 {
+    display:none;
+}
+.djur-page2 {
+    display:none;
+}
+.djur-page3 {
+    display:none;
+}
+
+
+.djur-content,
+.färg-content,
+.plus-content {
+    display:none;
 }
