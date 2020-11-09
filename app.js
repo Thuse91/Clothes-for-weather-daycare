@@ -4,31 +4,87 @@ const container = document.createElement('div');
 container.setAttribute('class', 'container');
 app.appendChild(container);
 
+
 var request = new XMLHttpRequest();
 request.open('GET', 'https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/12.946284/lat/56.03315/data.json', true);
 request.onload = function () {
     let data = JSON.parse(this.response);
     console.log(data.timeSeries[0].parameters[18].values)
 
+    function sol() {
+        document.body.style.backgroundImage = "url('back-sunny.jpeg')";
+        Solcontent.style.display = "block";
+        Soldesc.style.display = "block";
+        Molncontent.style.display = "none";
+        Molndesc.style.display = "none";
+        RegnContent.style.display = "none";
+        Regndesc.style.display = "none";
+        Snöcontent.style.display = "none";
+        Snödesc.style.display = "none";
+    }
+    
+    
+    function moln() {
+        document.body.style.backgroundImage = "url('back-cloud.jpg')";
+        Solcontent.style.display = "none";
+        Soldesc.style.display = "none";
+        Molncontent.style.display = "block";
+        Molndesc.style.display = "block";
+        RegnContent.style.display = "none";
+        Regndesc.style.display = "none";
+        Snöcontent.style.display = "none";
+        Snödesc.style.display = "none";
+    }
+    
+    function regn() {
+        document.body.style.backgroundImage = "url('back-rain.jpg')";
+        Solcontent.style.display = "none";
+        Soldesc.style.display = "none";
+        Molncontent.style.display = "none";
+        Molndesc.style.display = "none";
+        RegnContent.style.display = "block";
+        Regndesc.style.display = "block";
+        Snöcontent.style.display = "none";
+        Snödesc.style.display = "none";
+    }
+    
+    
+    function snö() {
+        document.body.style.backgroundImage = "url('back-snow.jpg')";
+        Solcontent.style.display = "none";
+        Soldesc.style.display = "none";
+        Molncontent.style.display = "none";
+        Molndesc.style.display = "none";
+        RegnContent.style.display = "none";
+        Regndesc.style.display = "none";
+        Snöcontent.style.display = "block";
+        Snödesc.style.display = "block";
+    }
+
     if (data.timeSeries[0].parameters[18].values <= 3) {
         console.log("Clear sky") 
         document.querySelector("#väder-nu").src = "sol.jpg";
+        sol();
+
     } else if (data.timeSeries[0].parameters[18].values <= 7  && data.timeSeries[0].parameters[18].values > 3){
         document.querySelector("#väder-nu").src = "moln.jpg";
         console.log("Cloudy")
+        moln();
     } else if (data.timeSeries[0].parameters[18].values <= 14  && data.timeSeries[0].parameters[18].values >= 7 || data.timeSeries[0].parameters[18].values <= 24  && data.timeSeries[0].parameters[18].values >= 18) {
         document.querySelector("#väder-nu").src = "rainy.jpg";
         console.log("Rain")
+        regn();
     } else if (data.timeSeries[0].parameters[18].values <= 17  && data.timeSeries[0].parameters[18].values >= 15 || data.timeSeries[0].parameters[18].values <= 27  && data.timeSeries[0].parameters[18].values >= 25) {
         document.querySelector("#väder-nu").src = "snow.jpg";
         console.log("Snow")
+        snö();
  
     }
     
 }
 
 // Simple Math... Color Buttons...Fruit...
-
+// https://www.wallpapermania.eu/download/2012-08/3309/Raining-in-my-neighborhood_1920x1200.jpg
 /* 
     1-3 clear
     4-7  cloud 
@@ -94,6 +150,7 @@ var Snödesc = document.querySelector(".snö-plagg");
 
 
 function sol() {
+    document.body.style.backgroundImage = "url('back-sunny.jpeg')";
     Solcontent.style.display = "block";
     Soldesc.style.display = "block";
     Molncontent.style.display = "none";
@@ -106,6 +163,7 @@ function sol() {
 
 
 function moln() {
+    document.body.style.backgroundImage = "url('back-cloud.jpg')";
     Solcontent.style.display = "none";
     Soldesc.style.display = "none";
     Molncontent.style.display = "block";
@@ -117,6 +175,7 @@ function moln() {
 }
 
 function regn() {
+    document.body.style.backgroundImage = "url('back-rain.jpg')";
     Solcontent.style.display = "none";
     Soldesc.style.display = "none";
     Molncontent.style.display = "none";
@@ -129,6 +188,7 @@ function regn() {
 
 
 function snö() {
+    document.body.style.backgroundImage = "url('back-snow.jpg')";
     Solcontent.style.display = "none";
     Soldesc.style.display = "none";
     Molncontent.style.display = "none";
