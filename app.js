@@ -28,7 +28,6 @@ request.onload = function () {
 
 
 
-
 /* 
     1-3 clear
     4-7  cloud 
