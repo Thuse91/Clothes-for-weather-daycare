@@ -1,0 +1,145 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* header content */
+
+#väder-nu {
+    width: 300px;
+    height: 300px;
+}
+
+
+.wrap {
+    max-width: 1300px;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+.head-wrap {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 10px 10px black;
+    border: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.food,
+.weathernow,
+.mathie {
+    flex: 1;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.header-btn {
+    text-align: center;
+    padding: 30px 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    border: 1px solid rgb(121, 83, 1);
+    background-color: rgb(233, 159, 0);
+    box-shadow: 0px 12px 0px 0px rgba(0,0,0,0.75);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#väderet
+ {
+    background-color: rgb(113, 198, 255);
+}
+
+#klur {
+    margin-bottom: 55px;
+    background-color: rgb(255, 168, 55);
+}
+
+#äta {
+    background-color: rgb(103, 252, 97);
+}
+
+#kläder {
+    background-color: rgb(145, 65, 199);
+}
+/* IMG styles */
+
+
+.head-wrap img {
+    width: 300px;
+    height: 300px;
+}
+
+.mathie img {
+    width: 250px;
+    height: 250px;
+}
+
+/* main content nav */
+.content{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.djurosaker,
+.färgoformer,
+.plusominus {
+    flex: 1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.djurosaker {
+    border: 1px solid rgb(121, 83, 1);
+    background-color: rgb(252, 202, 94);
+}
+ 
+.färgoformer {
+    border: 1px solid rgb(0, 35, 87);
+    background-color: rgb(31, 219, 210);
+}
+
+
+.plusominus {
+    border: 1px solid rgb(121, 83, 1);
+    background-color: rgb(39, 233, 0);
+}

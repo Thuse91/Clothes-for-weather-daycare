@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="klur.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+    <title>Klur</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head-wrap">
+          <div class="food">
+              <h1 class="header-btn" id="äta"><a onclick="responsiveVoice.speak('Vad ska vi äta idag?', 'Swedish Female');" 
+                  type="button" value="#">Vad ska vi äta idag? <i class="fas fa-volume-up"></i></h1>
+              <a href="#"><img id="forkandknife" src="/images/forkandknife.png" alt="gaffel och kniv"></a>
+          </div>
+          <div class="weathernow">
+              <h1 class="header-btn" id="väderet"><a onclick="responsiveVoice.speak('Vad är det för väder idag?', 'Swedish Female');" 
+                  type="button" value="#">Vad är det för väder idag? <i class="fas fa-volume-up"></i></h1>
+            <a href="index.html"><img id="väder-nu" src="#" alt="väder bild"></a>
+          </div>
+          <div class="mathie">
+              <h1 id="klur" class="header-btn"><a onclick="responsiveVoice.speak('Klurigheter och mera!', 'Swedish Female');" 
+                  type="button" value="#">Klurigheter och mera! <i class="fas fa-volume-up"></i></h1>
+            <a href="#"><img id="#" src="/images/questionmark.png" alt="Frågetecken"></a>
+          </div>
+       </div>
+
+       <div class="content">
+     <div class="djurosaker">
+        <a onclick="responsiveVoice.speak('Djur och Saker', 'Swedish Female');" 
+        type="button" value="#">
+         <h2>Djur och Saker</h2>
+     </div>  
+     <div class="färgoformer">
+        <a onclick="responsiveVoice.speak('Färger och Former', 'Swedish Female');" 
+        type="button" value="#">
+        <h2>Färger och Former</h2>
+     </div>  
+     <div class="plusominus">
+        <a onclick="responsiveVoice.speak('Plus och Minus', 'Swedish Female');" 
+        type="button" value="#">
+        <h2>Plus och Minus</h2>
+     </div>
+    </div>
+    <div class="djur-content">
+
+    </div> 
+    <div class="färg-content">
+        
+    </div>
+    <div class="plus-content">
+        
+    </div> 
+    </div>
+    <div class="root"></div>
+       <script src="klur.js"></script>
+       <script src="https://code.responsivevoice.org/responsivevoice.js?key=GxkaBtlq"></script>
+</body>
+</html>
