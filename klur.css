@@ -147,12 +147,13 @@ h2 {
 
 
 
-.djur-content {
+.djur-content,
+.färg-content
+.plus-content {
     margin-top: 25px;
     display:flex;
     margin-bottom: 40px;
 }
-
 
 .back {
     flex:1;
@@ -169,7 +170,9 @@ h2 {
 
 .djur-page1, 
 .djur-page2, 
-.djur-page3 {
+.djur-page3,
+.färg-page1,
+.plus-page1 {
     flex:16;
 }
 
@@ -213,6 +216,55 @@ h3 {
 }
 
 
+.plus-content img {
+    height: 100px;
+    width: 100px;
+}
+
+.plus-content .row-box {
+    border:none ;
+    box-shadow: none;
+    margin: 25px 10px;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.plus-content .djur-row {
+    background-color: white;
+    box-shadow: 0px 10px 10px black;
+    border: 2px solid rgb(46, 46, 46);
+    margin-bottom: 40px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 25px;
+    max-width: 1155px;
+}
+
+.plus-content h3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+
+.plus-content .fram {
+    margin-left: 20px;
+}
+
+.plus-content .back {
+    margin-right: 20px;
+}
+
+#last-päron img {
+    height: 75px;
+    width: 75px;
+
+}
 .djur-page1 {
     display:none;
 }
@@ -228,4 +280,9 @@ h3 {
 .färg-content,
 .plus-content {
     display:none;
+}
+
+.fram,
+.back {
+    cursor: pointer;
 }

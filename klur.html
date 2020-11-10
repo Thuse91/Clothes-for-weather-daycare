@@ -45,7 +45,7 @@
      </div>
     </div>
     <div class="djur-content">
-        <div class="back"><i class="fas fa-arrow-alt-circle-left" style="font-size: 70px";></i></div>
+        <div class="back" onclick="bakåt();"><i class="fas fa-arrow-alt-circle-left" style="font-size: 70px";></i></div>
         <div class="djur-page1"> 
         <div class="djur-row">
             <div class="row-box">
@@ -205,14 +205,163 @@
             </div>
         </div>
     </div> 
-    <div class="fram"><i class="fas fa-arrow-alt-circle-right"  style="font-size: 70px";></i></div>
+    <div class="fram" onclick="framåt();"><i class="fas fa-arrow-alt-circle-right"  style="font-size: 70px";></i></div>
+    </div>
     <div class="färg-content">
-        
-    </div>
-    <div class="plus-content">
-        
+        <div class="back"></div>
+        <div class="färg-page1">
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Grön cirkel', 'Swedish Female');" 
+                    type="button" value="Grön cirkel">Grön cirkel <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/greencircle.png" alt="Grön cirkel">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Gult Hjärta', 'Swedish Female');" 
+                    type="button" value="Gult Hjärta">Gult Hjärta <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/yellow heart.png" alt="Gult Hjärta">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Orange kvadrat', 'Swedish Female');" 
+                    type="button" value="Orange kvadrat">Orange kvadrat <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/orangesquare.png" alt="Orange kvadrat">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Röd Triangel', 'Swedish Female');" 
+                    type="button" value="Röd Triangel">Röd Triangel <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/redtriangle.png" alt="Röd Triangel">            
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Blå romb', 'Swedish Female');" 
+                    type="button" value="Blå romb">Blå romb <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/blue rhombus.png" alt="Blå romb">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Lila halvmåne', 'Swedish Female');" 
+                    type="button" value="Lila halvmåne">Lila halvmåne <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/purplecrecent.png" alt="Lila halvmåne">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Rosa rektangel', 'Swedish Female');" 
+                    type="button" value="Rosa rektangel">Rosa rektangel <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/pink rektangel.jpg" alt="Rosa rektangel"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Brun stjärna', 'Swedish Female');" 
+                    type="button" value="Brun stjärna">Brun stjärna <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/brown star.png" alt="Brun stjärna">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Grått kors', 'Swedish Female');" 
+                    type="button" value="Grått kors">Grått kors <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/graycross.png" alt="Grått kors">
+            </div>
+        </div>
     </div> 
-    </div>
+    <div class="fram"></div>     
+    </div>      
+    <div class="plus-content">
+        <div class="back"></div>
+        <div class="plus-page1">
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('ett äpple', 'Swedish Female');" 
+                    type="button" value="ett äpple">1 Äpple <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/äpple.jpg" alt="ett äpple">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Plus', 'Swedish Female');" 
+                    type="button" value="Plus">Plus <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/plus.jpg" alt="Plus">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('ett äpple', 'Swedish Female');" 
+                    type="button" value="ett äpple">1 Äpple <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/äpple.jpg" alt="ett äpple">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('är lika med', 'Swedish Female');" 
+                    type="button" value="är lika med">är lika med <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/equals.jpg" alt="är lika med">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('2 Äpplen', 'Swedish Female');" 
+                    type="button" value="2 Äpplen">2 Äpplen <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/äpple.jpg" alt="1 Äpplen">
+                <img  src="/images/äpple.jpg" alt="1 Äpplen">
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('3 Bananer', 'Swedish Female');" 
+                    type="button" value="3 Bananer">3 Bananer <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/banan.jpg" alt="1 Banan">                     
+                    <img  src="/images/banan.jpg" alt="1 Banan">                     
+                    <img  src="/images/banan.jpg" alt="1 Banan">                     
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Minus', 'Swedish Female');" 
+                    type="button" value="Minus">Minus <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/minus.png" alt="Minus">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('2 bananer', 'Swedish Female');" 
+                    type="button" value="2 bananer">2 bananer <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/banan.jpg" alt="1 Banan"> 
+                    <img  src="/images/banan.jpg" alt="1 Banan"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('är lika med', 'Swedish Female');" 
+                    type="button" value="är lika med">är lika med <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/equals.jpg" alt="är lika med">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('en  banan', 'Swedish Female');" 
+                    type="button" value="en banan">1 banan <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/banan.jpg" alt="1 Banan"> 
+            </div>
+        </div>
+        <div class="djur-row">
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('2 Päron', 'Swedish Female');" 
+                    type="button" value="2 Päron">2 Päron <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/päron.jpg" alt="1 Päron">                     
+                    <img  src="/images/päron.jpg" alt="1 Päron">                     
+                  
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('Plus', 'Swedish Female');" 
+                    type="button" value="Plus">Plus <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/plus.jpg" alt="Plus">
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('2 Päron', 'Swedish Female');" 
+                    type="button" value="2 Päron">2 Päron <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/päron.jpg" alt="1 Päron"> 
+                    <img  src="/images/päron.jpg" alt="1 Päron"> 
+            </div>
+            <div class="row-box">
+                <h3><a onclick="responsiveVoice.speak('är lika med', 'Swedish Female');" 
+                    type="button" value="är lika med">är lika med <i class="fas fa-volume-up"></i></a></h3>
+                <img  src="/images/equals.jpg" alt="är lika med">
+            </div>
+            <div class="row-box" id="last-päron">
+                <h3><a onclick="responsiveVoice.speak('4  Päron', 'Swedish Female');" 
+                    type="button" value="4 Päron">4 Päron <i class="fas fa-volume-up"></i></a></h3>
+                    <img  src="/images/päron.jpg" alt="1 Päron">                     
+                    <img  src="/images/päron.jpg" alt="1 Päron">
+                    <img  src="/images/päron.jpg" alt="1 Päron">
+                    <img  src="/images/päron.jpg" alt="1 Päron">
+            </div>
+        </div>
+    </div> 
+    <div class="fram"></div>     
+    </div>    
+    </div> 
     <div class="root"></div>
        <script src="klur.js"></script>
        <script src="https://code.responsivevoice.org/responsivevoice.js?key=GxkaBtlq"></script>

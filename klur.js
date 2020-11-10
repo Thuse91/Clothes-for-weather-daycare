@@ -47,6 +47,8 @@ function färgoform() {
     färgcontent.style.display = "flex";
     fram.style.display = "none";
     page1.style.display = "none";
+    page1.style.display = "none";
+    page1.style.display = "none";
     back.style.display = "none";
 }
 
@@ -57,6 +59,8 @@ function plusominus() {
     pluscontent.style.display = "flex";
     fram.style.display = "none";
     page1.style.display = "none";
+    page2.style.display = "none";
+    page3.style.display = "none";
     back.style.display = "none";
 
 }
@@ -67,7 +71,49 @@ function djurosaker() {
     djurcontent.style.display = "flex";
     fram.style.display = "block";
     page1.style.display = "block";
+    page2.style.display = "none";
+    page3.style.display = "none";
     back.style.display = "block";
+}
+
+
+
+function framåt() {
+        if (page1.style.display === "block"){
+            page3.style.display = "none";
+            page1.style.display = "none";
+            page2.style.display = "block";
+        }
+        else if (page2.style.display === "block") {
+            page1.style.display = "none";
+            page2.style.display = "none";
+            page3.style.display = "block";
+        }
+        else if (page3.style.display === "block") {
+            page2.style.display = "none";
+            page3.style.display = "none";
+            page1.style.display = "block";
+        }
+
+}
+
+function bakåt() {
+    if (page1.style.display === "block"){
+        page1.style.display = "none";
+        page2.style.display = "none";
+        page3.style.display = "block";
+    }
+    else if (page2.style.display === "block") {
+        page2.style.display = "none";
+        page3.style.display = "none";
+        page1.style.display = "block";
+    }
+    else if (page3.style.display === "block") {
+        page3.style.display = "none";
+        page1.style.display = "none";
+        page2.style.display = "block";
+    }
+
 }
 
 
