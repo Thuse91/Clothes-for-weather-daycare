@@ -11,16 +11,16 @@ request.onload = function () {
 
     if (data.timeSeries[0].parameters[18].values <= 3) {
         console.log("Clear sky") 
-        document.querySelector("#väder-nu").src = "/images/sol.jpg";
+        document.querySelector("#väder-nu").src = "sol.jpg";
 
     } else if (data.timeSeries[0].parameters[18].values <= 7  && data.timeSeries[0].parameters[18].values > 3){
-        document.querySelector("#väder-nu").src = "/images/moln.jpg";
+        document.querySelector("#väder-nu").src = "moln.jpg";
         console.log("Cloudy")
     } else if (data.timeSeries[0].parameters[18].values <= 14  && data.timeSeries[0].parameters[18].values >= 7 || data.timeSeries[0].parameters[18].values <= 24  && data.timeSeries[0].parameters[18].values >= 18) {
-        document.querySelector("#väder-nu").src = "/images/rainy.jpg";
+        document.querySelector("#väder-nu").src = "rainy.jpg";
         console.log("Rain")
     } else if (data.timeSeries[0].parameters[18].values <= 17  && data.timeSeries[0].parameters[18].values >= 15 || data.timeSeries[0].parameters[18].values <= 27  && data.timeSeries[0].parameters[18].values >= 25) {
-        document.querySelector("#väder-nu").src = "/images/snow.jpg";
+        document.querySelector("#väder-nu").src = "snow.jpg";
         console.log("Snow")
  
     }

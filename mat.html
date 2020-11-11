@@ -1,0 +1,88 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+  <title>Mat</title>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body id="back-mat">
+  <div class="wrap">
+  <div class="head-wrap">
+    <div class="food">
+        <h1 class="header-btn" id="äta"><a onclick="responsiveVoice.speak('Vad ska vi äta idag?', 'Swedish Female');" 
+            type="button" value="#">Vad ska vi äta idag? <i class="fas fa-volume-up"></i></h1>
+            <a href="mat.html"><img id="forkandknife" src="forkandknife.png" alt="gaffel och kniv"></a>
+    </div>
+    <div class="weathernow">
+        <h1 class="header-btn" id="väderet"><a onclick="responsiveVoice.speak('Vad är det för väder idag?', 'Swedish Female');" 
+            type="button" value="#">Vad är det för väder idag? <i class="fas fa-volume-up"></i></h1>
+        <a href="index.html"><img id="väder-nu" src="#" alt="väder bild"></a>
+    </div>
+    <div class="mathie">
+        <h1 id="klur" class="header-btn"><a onclick="responsiveVoice.speak('Klurigheter och mera!', 'Swedish Female');" 
+            type="button" value="#">Klurigheter och mera! <i class="fas fa-volume-up"></i></h1>
+        <a href="klur.html"><img id="#" src="questionmark.png" alt="Frågetecken"></a>
+    </div>
+ </div>
+ <div class="food-box">
+    <h3 class="food-today" onclick="responsiveVoice.speak('Dagens mat', 'Swedish Female');" 
+    type="button" value="#">Dagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="today1" onclick="responsiveVoice.speak(idag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="today2" onclick="responsiveVoice.speak(idag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+ <div class="food-box">
+    <h3 class="food-mon" onclick="responsiveVoice.speak('Måndagens mat', 'Swedish Female');" 
+    type="button" value="#">Måndagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="mon1" onclick="responsiveVoice.speak(mondag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="mon2" onclick="responsiveVoice.speak(mondag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+ <div class="food-box">
+    <h3 class="food-tue" onclick="responsiveVoice.speak('Tisdagens mat', 'Swedish Female');" 
+    type="button" value="#">Tisdagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="tue1" onclick="responsiveVoice.speak(tisdag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="tue2" onclick="responsiveVoice.speak(tisdag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+ <div class="food-box">
+    <h3 class="food-wed" onclick="responsiveVoice.speak('Onsdagens mat', 'Swedish Female');" 
+    type="button" value="#">Onsdagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="wed1" onclick="responsiveVoice.speak(onsdag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="wed2" onclick="responsiveVoice.speak(onsdag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+ <div class="food-box">
+    <h3 class="food-thu" onclick="responsiveVoice.speak('Torsdagens mat', 'Swedish Female');" 
+    type="button" value="#">Torsdagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="thu1" onclick="responsiveVoice.speak(torsdag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="thu2" onclick="responsiveVoice.speak(torsdag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+ <div class="food-box">
+    <h3  class="food-fri" onclick="responsiveVoice.speak('Fredagens mat', 'Swedish Female');" 
+    type="button" value="#">Fredagens mat <i class="fas fa-volume-up"></i></h3>
+    <p class="fri1" onclick="responsiveVoice.speak(fredag1, 'Swedish Female');" 
+    type="button" value="#"></p>
+    <p class="fri2" onclick="responsiveVoice.speak(fredag2, 'Swedish Female');" 
+    type="button" value="#"></p>
+ </div>
+</div>
+  <div id="root"></div>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=GxkaBtlq"></script>
+  <script src="mat.js"></script>
+</body>
+
+</html>

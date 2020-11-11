@@ -5,7 +5,7 @@ body {
     padding: 0;
     width: 100%;
     font-size: 160%;
-    background-image: url('/images/back-question.jpg');
+    background-image: url('back-question.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
