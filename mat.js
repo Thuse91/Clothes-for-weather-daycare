@@ -19,47 +19,49 @@ request.onload = function () {
   idag1 = document.querySelector(".today1").innerHTML;
   idag2 = document.querySelector(".today2").innerHTML;
 
+  console.log(data.weeks[0].days[0].items[0])
+  console.log(data.weeks[0].days[0].items[1])
+  
+  console.log(data.weeks[0].days[1].items[0])
+  console.log(data.weeks[0].days[1].items[1])
+  
+  console.log(data.weeks[0].days[2].items[0])
+  console.log(data.weeks[0].days[2].items[1])
+  
+  console.log(data.weeks[0].days[3].items[0])
+  console.log(data.weeks[0].days[3].items[1])
+  
+  console.log(data.weeks[0].days[4].items[0])
+  console.log(data.weeks[0].days[4].items[1])
+  
+
   mondag1 = document.querySelector(".mon1").innerHTML =
-    data.weeks[0].days[0].meals[0].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[0].items[0] + ' <i class="fas fa-volume-up">';
   mondag2 = document.querySelector(".mon2").innerHTML =
-    data.weeks[0].days[0].meals[1].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[0].items[1] + ' <i class="fas fa-volume-up">';
 
   tisdag1 = document.querySelector(".tue1").innerHTML =
-    data.weeks[0].days[1].meals[0].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[1].items[0] + ' <i class="fas fa-volume-up">';
   tisdag2 = document.querySelector(".tue2").innerHTML =
-    data.weeks[0].days[1].meals[1].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[1].items[1] + ' <i class="fas fa-volume-up">';
 
   onsdag1 = document.querySelector(".wed1").innerHTML =
-    data.weeks[0].days[2].meals[0].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[2].items[0] + ' <i class="fas fa-volume-up">';
   onsdag2 = document.querySelector(".wed2").innerHTML =
-    data.weeks[0].days[2].meals[1].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[2].items[1] + ' <i class="fas fa-volume-up">';
 
   torsdag1 = document.querySelector(".thu1").innerHTML =
-    data.weeks[0].days[3].meals[0].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[3].items[0] + ' <i class="fas fa-volume-up">';
   torsdag2 = document.querySelector(".thu2").innerHTML =
-    data.weeks[0].days[3].meals[1].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[3].items[1] + ' <i class="fas fa-volume-up">';
 
   fredag1 = document.querySelector(".fri1").innerHTML =
-    data.weeks[0].days[4].meals[0].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[4].items[0] + ' <i class="fas fa-volume-up">';
   fredag2 = document.querySelector(".fri2").innerHTML =
-    data.weeks[0].days[4].meals[1].value + ' <i class="fas fa-volume-up">';
+    data.weeks[0].days[4].items[1] + ' <i class="fas fa-volume-up">';
 
-  /* 
-console.log(data.weeks[0].days[0].meals[0].value)
-console.log(data.weeks[0].days[0].meals[1].value)
 
-console.log(data.weeks[0].days[1].meals[0].value)
-console.log(data.weeks[0].days[1].meals[1].value)
 
-console.log(data.weeks[0].days[2].meals[0].value)
-console.log(data.weeks[0].days[2].meals[1].value)
-
-console.log(data.weeks[0].days[3].meals[0].value)
-console.log(data.weeks[0].days[3].meals[1].value)
-
-console.log(data.weeks[0].days[4].meals[0].value)
-console.log(data.weeks[0].days[4].meals[1].value)
- */
 
   var today = new Date();
   if (today.getDay() == 6 || today.getDay() == 0) {
@@ -68,31 +70,30 @@ console.log(data.weeks[0].days[4].meals[1].value)
     idag1 = "Helg";
   } else if (today.getDay() == 1) {
     idag1 = document.querySelector(".today1").innerHTML =
-      data.weeks[0].days[0].meals[0].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[0].items[0] + ' <i class="fas fa-volume-up">';
     idag2 = document.querySelector(".today2").innerHTML =
-      data.weeks[0].days[0].meals[1].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[0].items[1] + ' <i class="fas fa-volume-up">';
   } else if (today.getDay() == 2) {
     idag1 = document.querySelector(".today1").innerHTML =
-      data.weeks[0].days[1].meals[0].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[1].items[0] + ' <i class="fas fa-volume-up">';
     idag2 = document.querySelector(".today2").innerHTML =
-      data.weeks[0].days[1].meals[1].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[1].items[1] + ' <i class="fas fa-volume-up">';
   } else if (today.getDay() == 3) {
     idag1 = document.querySelector(".today1").innerHTML =
-      data.weeks[0].days[2].meals[0].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[2].items[0] + ' <i class="fas fa-volume-up">';
     idag2 = document.querySelector(".today2").innerHTML =
-      data.weeks[0].days[2].meals[1].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[2].items[1] + ' <i class="fas fa-volume-up">';
   } else if (today.getDay() == 4) {
     idag1 = document.querySelector(".today1").innerHTML =
-      data.weeks[0].days[3].meals[0].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[3].items[0] + ' <i class="fas fa-volume-up">';
     idag2 = document.querySelector(".today2").innerHTML =
-      data.weeks[0].days[3].meals[1].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[3].items[1] + ' <i class="fas fa-volume-up">';
   } else if (today.getDay() == 5) {
     idag1 = document.querySelector(".today1").innerHTML =
-      data.weeks[0].days[4].meals[0].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[4].items[0] + ' <i class="fas fa-volume-up">';
     idag2 = document.querySelector(".today2").innerHTML =
-      data.weeks[0].days[4].meals[1].value + ' <i class="fas fa-volume-up">';
+      data.weeks[0].days[4].items[1] + ' <i class="fas fa-volume-up">';
   }
-
 };
 
 
